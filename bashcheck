@@ -27,6 +27,6 @@ fi
 
 r=`a="() { echo x;}" bash -c a 2>/dev/null`
 if [ -n "$r" ]
-then echo -e "\e[93mVariable function parser still active, likely vulnerable to bugs like CVE-2014-6277 (lcamtuf)\e[39m"
+then echo -e "\e[91mVariable function parser still active, likely vulnerable to bugs like CVE-2014-6277 (lcamtuf)\e[39m"
 else echo -e "\e[92mVariable function parser inactive, likely safe from unknown parser bugs\e[39m"
 fi
